@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'explore_page.dart';
-import 'workout_page.dart'; // Import WorkoutPage here
+import 'workout_page.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -13,7 +13,6 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Adjusted Greeting
               Padding(
                 padding: const EdgeInsets.only(top: 40.0),
                 child: Column(
@@ -103,7 +102,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      // Custom Bottom Navigation Bar
+      //   Navigation Bar
       bottomNavigationBar: _buildBottomNavigationBar(context),
     );
   }
@@ -119,13 +118,12 @@ class HomeScreen extends StatelessWidget {
           borderRadius: BorderRadius.only(topLeft: Radius.circular(23)),
           image: DecorationImage(
             image: AssetImage(
-                '/Users/abubakkar/fitness_app/lib/images/5.jpg'), // Replace with actual image path
+                '/Users/abubakkar/fitness_app/lib/images/5.jpg'), 
             fit: BoxFit.cover,
           ),
         ),
         child: Stack(
           children: [
-            // Bold white text overlay, positioned top-left and above the small info boxes
             Positioned(
               top: 12,
               left: 12,
@@ -147,7 +145,7 @@ class HomeScreen extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            // Bottom small info boxes
+            // info box
             Positioned(
               bottom: 10,
               left: 10,
@@ -159,7 +157,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            // Play button icon in the bottom-right
+            // Play button
             Positioned(
               top: 20,
               bottom: 20,
@@ -221,7 +219,7 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     image: DecorationImage(
                       image: AssetImage(
-                          '/Users/abubakkar/fitness_app/lib/images/big2_PushUps.jpg'), // Replace with actual image URL
+                          '/Users/abubakkar/fitness_app/lib/images/big2_PushUps.jpg'),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -239,7 +237,7 @@ class HomeScreen extends StatelessWidget {
                     Text(subtitle, style: TextStyle(color: Colors.black54)),
                     SizedBox(height: 8),
                     Container(
-                      width: 180, // Adjusted width
+                      width: 180,
                       height: 16,
                       decoration: BoxDecoration(
                         color: Colors.grey.shade300,
