@@ -13,7 +13,7 @@ class ExplorePage extends StatelessWidget {
             children: [
               SizedBox(height: 40),
 
-              // Top Banner Image
+              // top page Image
               Stack(
                 children: [
                   Container(
@@ -51,9 +51,7 @@ class ExplorePage extends StatelessWidget {
                     bottom: 12,
                     left: 16,
                     child: GestureDetector(
-                      onTap: () {
-                        // Action for 'See more' tap
-                      },
+                      onTap: () {},
                       child: Text(
                         "See more",
                         style: TextStyle(
@@ -74,7 +72,7 @@ class ExplorePage extends StatelessWidget {
               ),
               SizedBox(height: 16),
 
-              // Card Slider 1 (Best for You)
+              // 1st Card Slider  (Best for You)
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -94,7 +92,7 @@ class ExplorePage extends StatelessWidget {
               ),
               SizedBox(height: 20),
 
-              // Duplicate Card Slider for "Best for You"
+              // 2nd Card Slider for "Best for You"
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -153,7 +151,7 @@ class ExplorePage extends StatelessWidget {
               ),
               SizedBox(height: 16),
 
-              // Card Slider 2 (Fast Warmup)
+              // Card Slider (Fast Warmup)
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -181,13 +179,13 @@ class ExplorePage extends StatelessWidget {
     );
   }
 
-  // Explore Card Widget
+  // Explore Widget
   Widget _exploreCard(String imagePath, String title, List<String> tags) {
     return Padding(
       padding: const EdgeInsets.only(right: 12.0),
       child: Container(
-        width: 220, // Fixed width for consistent card size
-        height: 110, // Fixed height for consistent card size
+        width: 220,
+        height: 110,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
