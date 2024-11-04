@@ -39,7 +39,7 @@ class WorkoutPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      // Floating Information Box positioned at the bottom center
+                      // Floating Information Box
                       Positioned(
                         bottom: -3,
                         left: 20,
@@ -48,7 +48,7 @@ class WorkoutPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 80), // Space for the floating box to adjust
+                  SizedBox(height: 80),
                   // Workout Title
                   Text(
                     "Lower Body Training",
@@ -92,7 +92,7 @@ class WorkoutPage extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 20),
-                  // Vertical Slider with 8 Boxes
+                  // Vertical Slider
                   Column(
                     children: [
                       _workoutCard(
@@ -164,9 +164,7 @@ class WorkoutPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                   ),
                 ),
-                onPressed: () {
-                  // Action for workout start
-                },
+                onPressed: () {},
                 child: Text(
                   "Let's Workout",
                   style: TextStyle(color: Colors.black, fontSize: 18),
@@ -179,7 +177,7 @@ class WorkoutPage extends StatelessWidget {
     );
   }
 
-  // Floating Information Box Widget
+  // Floating Info Box Widget
   Widget _floatingBox() {
     return ClipRect(
       child: Container(
@@ -198,7 +196,7 @@ class WorkoutPage extends StatelessWidget {
               label: "Time",
               value: "20 min",
             ),
-            Container(width: 1, color: Colors.white), // Divider line
+            Container(width: 1, color: Colors.white),
             _infoBoxItem(
               icon: Icons.local_fire_department,
               label: "Burn",
@@ -304,7 +302,7 @@ class WorkoutPage extends StatelessWidget {
             ),
             Spacer(),
             Container(
-              margin: EdgeInsets.only(right: 8), // Offset slightly from border
+              margin: EdgeInsets.only(right: 8),
               width: 40,
               height: 40,
               decoration: BoxDecoration(
